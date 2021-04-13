@@ -28,7 +28,7 @@ interface ConnectionInterface
      * @param \Psr\Log\LoggerInterface $trace        Logger object
      */
     public function __construct($handler, $hostDetails, $connectionParams,
-                                SerializerInterface $serializer, LoggerInterface $log, LoggerInterface $trace);
+                                SerializerInterface $serializer, LoggerInterface $log, LoggerInterface $trace = null);
 
     /**
      * Get the transport schema for this connection
